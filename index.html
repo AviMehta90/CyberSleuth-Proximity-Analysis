@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link href="css/styles.css" rel="stylesheet" />
+    <script type="module" src="js/map.js"></script>
+    <script type="module" src="js/network.js"></script>
+    <script type="module" src="js/heatmap.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/streamgraph.js"></script>
+    <title>DV Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="justify-content-center align-items-center">
+        <h1> VAST MC 2020 </h1>
+        <p>To identify the hackers, the task at hand involves examining CGCS records to pinpoint 
+          groups that closely match a profile identified by CGCS sociopsychologists. The researchers 
+          at the Center for Global Cyber Strategy (CGCS) have utilized data from white hat groups to 
+          create anonymized profiles of various groups. Among these profiles, some have been singled out 
+          as closely resembling the structure of the group responsible for the recent internet outage. The objective 
+          is to analyze CGCS records and identify groups that best fit the identified profile, contributing 
+          to the identification of the hackers behind the recent internet outage.
+        </p>
+        <hr>
+        <h2>Visualizations and Legends:</h2>
+        <br>
+         <div class="row">
+          <div class="col-3">
+            <h4> <span><img src="img/stream.png" alt="Stream Graph" width="32" height="32" style="margin-right: 5px;"></span>Stream Graph:</h4>
+            <p>Gives us data by week.<br> Move the slice to try! <br> Click to filter.</p>
+          
+             <span><img src="img/height.png" alt="Stream Graph" width="16" height="16" style="margin-right: 5px;"></span>: Frequency of communication<br>
+             <span><img src="img/time.png" alt="Stream Graph" width="20" height="20" style="margin-right: 5px;"></span>: Time slice indicate the week<br>
+             
+            
+
+          </div>
+          <div class="col-2">
+            <h4> <span><img src="img/piechart.png" alt="Stream Graph" width="32" height="32" style="margin-right: 5px;"></span>Pie Chart:</h4>
+            <p>Filter data by edge type.<br> Hover to gain insight. <br> Click to filter.</p>
+          
+              
+              
+             
+
+
+          </div>
+          <div class="col-2">
+            <h4> <span><img src="img/donut.png" alt="Stream Graph" width="32" height="32" style="margin-right: 5px;"></span>Donut Chart:</h4>
+            <p> Explore each node's lifestyle.</p>
+
+          </div>
+          <div class="col-5">
+            <h4> <span><img src="img/network.png" alt="Stream Graph" width="32" height="32" style="margin-right: 5px;"></span>Network Graph:</h4>
+            Shows relationships between people. Hover on node to inspect!
+            <div class="row">
+              <div class="col-8">
+                <span><img src="img/opacity.png" alt="Stream Graph" width="16" height="16" style="margin-right: 5px;"></span>: Opacity for importance<br>
+                <span><img src="img/height.png" alt="Stream Graph" width="16" height="16" style="margin-right: 5px;"></span>: Thickness for strength of relationship <br>
+             
+              </div>
+              <div class="col-4">
+                <span><img src="img/node.png" alt="Stream Graph" width="16" height="16" style="margin-right: 5px;"></span>: Person<br>
+                <span><img src="img/remove.png" alt="Stream Graph" width="16" height="16" style="margin-right: 5px;"></span>: Relationship <br>
+                 </div>
+            </div>
+            
+           
+          </div>
+          
+         </div>
+         <br>
+         <br>
+
+         <div class="row">
+          <div class="col-4">
+            <h4> <span><img src="img/globe.png" alt="Stream Graph" width="32" height="32" style="margin-right: 5px;"></span>World Map:</h4>
+            <span><img src="img/russiaM.png" alt="Stream Graph" width="20" height="20" style="margin-right: 5px;"></span>: Highlighted countries show common meet ups.<br>
+            <span><img src="img/b2.png" alt="Stream Graph" width="16" height="16" style="margin-right: 5px;"></span>: Nodes of candidate graphs.<br>
+            <p>Hover on the country or data point to explore.</p>
+            
+          </div>
+          <div class="col-4">
+            <h4> <span><img src="img/heat.png" alt="Stream Graph" width="32" height="32" style="margin-right: 5px;"></span>Heat Map:</h4>
+            <p> Indicates frequency of communication for the day.<br> 
+              <span><img src="img/heatMap.png" alt="Stream Graph" width="64" height="16" style="margin-left: 5px;"></span> 0 being the least.
+            </p>
+            <p>Hover on the tile to scout.</p>
+          </div>
+          <div class="col-4">
+            <h4> <span><img src="img/bar-chart.png" alt="Stream Graph" width="32" height="32" style="margin-right: 5px;"></span>Bar Chart:</h4>
+            <p> Compare the demographics <br>of both network graphs.</p>
+          </div>
+         </div>
+         <br>
+
+         
+    <p>By analyzing these visualizations collectively, you can uncover patterns and similarities that will guide you in identifying the group that aligns most closely with the profile associated with the recent internet outage.</p>
+
+    </div>
+
+    <br>
+    <hr>
+    <br>
+  
+    </div>
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col d-flex justify-content-center align-items-center">
+          <div class="form-check form-switch" style="display: flex; align-items: center;">
+            <label  class="form-check-label" for="flexSwitchCheckChecked" id="leftSwitchStream">Streamgraph</label>
+            <input style="order: 2; margin-left: 10px; margin-right: 10px;" class="form-check-input" type="checkbox" role="switch" id="switchLeft">
+            <label style="order: 3;"  class="form-check-label" for="flexSwitchCheckChecked" id="leftSwitchHeat">HeatMap</label>
+          </div>
+        </div>
+        <div class="col">
+          <h2 class="page-heading">Find the culprits</h2>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <div class="form-check form-switch" style="display: flex; align-items: center;">
+          
+            <label  class="form-check-label" for="flexSwitchCheckChecked" id="leftSwitchStream">Streamgraph</label>
+            <input style="order: 2; margin-left: 10px; margin-right: 10px;" class="form-check-input" type="checkbox" role="switch" id="switchRight">
+            <label style="order: 3;"  class="form-check-label" for="flexSwitchCheckChecked" id="leftSwitchHeat">HeatMap</label>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="container-lg main-view">
+      <div class="row">
+        <div class="col-4">
+          <div class="card">
+              <div class="card-body" id="leftStream">Stream graph 
+              <svg id="streamgraphLeft"></svg>
+              </div>
+              <div class="card-body" id="leftHeatmap" style="display: none;">Heat Map</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body" id="pie_chart1">
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body" id="pie_chart2">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-6" style="font-size: 14px; text-align: left;">
+                  
+                      <div><strong>Pie Chart & Stream Graph</strong></div>
+                      <span><img src="img/email.png" alt="Stream Graph" width="14" height="14" style="margin-right: 5px;"></span> Email<br>
+                      <span><img src="img/buy.png" alt="Stream Graph" width="14" height="14" style="margin-right: 5px;"></span> Buy/Sell <br>
+                      <span><img src="img/phone.png" alt="Stream Graph" width="14" height="14" style="margin-right: 5px;"></span> Phone <br>
+                      <span><img src="img/travel.png" alt="Stream Graph" width="14" height="14" style="margin-right: 5px;"></span> Travel<br>
+
+                </div>
+
+                <div class="col-6" style="font-size: 14px; text-align: left;">
+                  <div><strong>Donut Chart</strong></div>
+                  <span><img src="img/ess.png" alt="Stream Graph" width="14" height="14" style="margin-right: 5px;"></span>: Essential<br>
+                  <span><img src="img/lei.png" alt="Stream Graph" width="14" height="14" style="margin-right: 5px;"></span>: Leisure <br>
+                  <span><img src="img/Inc.png" alt="Stream Graph" width="14" height="14" style="margin-right: 5px;"></span>: Income <br>
+                  <span><img src="img/Other.png" alt="Stream Graph" width="14" height="14" style="margin-right: 5px;"></span>: Other<br>
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body" id="rightStream">Stream graph 
+              <svg id="streamgraphRight"></svg>
+            </div>
+            <div class="card-body" id="rightHeatmap" style="display: none;">Heat Map</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              <div >
+                <button id="leftButton" class="image-button" onclick="lLeftBtn()"></button>
+                <span  id="lDisplayText" style="margin-left: 10px;margin-right:10px;"></span>
+                <button id="rightButton" class="image-button" onclick="lRightBtn()"></button>
+              </div>
+              <div id="myNet">
+                <svg></svg>
+                <div id="netLeftTooltip" style="position: absolute; opacity: 0; pointer-events: none; background-color: white; padding: 10px; border: 1px solid #ccc; border-radius: 5px; left: 35vw; 
+                top: 5vh;  z-index: 999;"></div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              <div >
+                <button id="leftButton" class="image-button" onclick="rLeftBtn()"></button>
+                <span  id="rDisplayText" style="margin-left: 10px;margin-right:10px;"></span>
+                <button id="rightButton" class="image-button" onclick="rRightBtn()"></button>
+              </div>
+              <div id="myNet2">
+                <svg></svg>
+                <div id="netRightTooltip" style="position: absolute; opacity: 0; pointer-events: none; background-color: white; padding: 10px; border: 1px solid #ccc; border-radius: 5px; left: 35vw; 
+                top: 5vh;  z-index: 999;"></div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              <div>
+                Map View
+              </div>
+              <div id="myMap">
+                <svg></svg>
+                <div id="mapTooltip" style="position: absolute; opacity: 0; pointer-events: none; background-color: white; padding: 10px; border: 1px solid #ccc; border-radius: 5px;left: 35vw;  top: 1vh;  z-index: 999;"></div>
+                <div id="mapTooltipPoint" style="position: absolute; opacity: 0; pointer-events: none; background-color: white; padding: 10px; border: 1px solid #ccc; border-radius: 5px;left: 35vw;  top: 1vh;  z-index: 999;"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              Demographic View
+              <svg id="demographics-svg">
+              </svg>
+              <div id="demoTooltip" style="position: absolute; opacity: 0; pointer-events: none; background-color: white; padding: 10px; border: 1px solid #ccc; border-radius: 5px; left: 1vw; 
+              top: 2vh;  z-index: 999;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
